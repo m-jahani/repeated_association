@@ -49,7 +49,7 @@
 >
 > Runs as:
 > 
-> Rscript TOPCAN.R \\ # input file\
+> Rscript TOPCAN.R \\\
 > annuus_maf_0.03_Rvalue_NFFD \\ # input file\
 > argophyllus_maf_0.03_Rvalue_NFFD \\ # input file\
 > R \\ # R: correlation BF: BayesFactor P: Pvalue\
@@ -62,22 +62,23 @@
 > output:
 >
 >> annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate
->> **information on number of total snps and outlier snps for each window and whether the window is a top candidate**
+>> annuus_maf_0.03_Rvalue_NFFD_topcandidate
+>> argophyllus_maf_0.03_Rvalue_NFFD_topcandidate
+
 
 
 ### NULLW.R
 
 > **identifies windows of Repeated Association (WRAs) between pairs of species**
-**
 >
 > Runs as:
 >
-> Rscript NULLW.R \
+> Rscript NULLW.R \\\
 > annuus_maf_0.03_Rvalue_NFFD \\ # input file\
 > argophyllus_maf_0.03_Rvalue_NFFD \\ # input file\
 > R \\ # R: correlation BF: BayesFactor P: Pvalue\
 > 5kbwindow_recombination \\ # input file\
-> annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate \\ #TOPCAN.R output
+> annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate \\ #TOPCAN.R output \
 > 0.05 \\ # threshold of q-value in FDR test \ 
 > ~  \\ # save directory \
 > 150 # number of threads
@@ -85,8 +86,29 @@
 > output:
 >
 >> Annuus_Argophyllus_NFFD_nullw_result_FDR_0.05
+>> Argophyllus_Annuus_NFFD_nullw_result_FDR_0.05
+>> Argophyllus_Annuus_NFFD_nullw_result
+>> Annuus_Argophyllus_NFFD_nullw_result
 
 
+### LDCLUSTER.R
 
-
-
+> **Forms Clusters of Repeated Association (CRAs) base on LD and genetic distance between them**
+> 
+> this script needs plink installed to run
+> 
+> Runs as:
+>
+> Rscript LDCLUSTER.R \\\
+> Annuus_Argophyllus_NFFD_nullw_result_FDR_0.05 \\ #NULLW.R output \
+> annuus_maf_0.03_Rvalue_NFFD \\ # input file\
+> Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf \\ # input file\
+> Annuus_threshold.90 \\ # input file\
+> Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \\ # input file\
+> 5 \\ # genetic distance threshold \
+> ~  \\ # save directory \
+> 25 # number of threads
+>
+> output:
+>>
+>> Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result
