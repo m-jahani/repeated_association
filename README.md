@@ -1,6 +1,6 @@
 # annuus_maf_0.03_Rvalue_NFFD
-> Spearsman correlation R coeficients for Annuus SNPs and NFFD climate variable.
-> column1: species ID.
+> Spearsman correlation R coeficients for Annuus SNPs and NFFD climate variable \n
+> column1: species ID \n
 > column2: variable ID.
 > column3: SNP ID in format of chromosomeID:Position.
 > column4: Corresponding window.
