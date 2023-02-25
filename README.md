@@ -1,4 +1,4 @@
-#input files
+# input files:
 
 ## annuus_maf_0.03_Rvalue_NFFD
 
@@ -36,3 +36,27 @@
 > - column1: Chromosome
 > - column2: Physical Position (bp)
 > - column3: Genetic Position (cM)
+
+## Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf
+
+> **standard VCF"
+
+# Scripts:
+
+## TOPCAN.R
+
+> **identifies windows of the genome within each species that showed strong signatures of association**
+>
+> Runs as:
+> 
+> Rscript TOPCAN.R \
+> annuus_maf_0.03_Rvalue_NFFD \
+> argophyllus_maf_0.03_Rvalue_NFFD \
+> R \
+> 5kbwindow_recombination \
+> 0.99 \
+> 0.9999 \
+> ~ \
+> 150
+
+
