@@ -49,14 +49,22 @@
 >
 > Runs as:
 > 
-> Rscript TOPCAN.R \\\
-> annuus_maf_0.03_Rvalue_NFFD \\\
-> argophyllus_maf_0.03_Rvalue_NFFD \\\
+> Rscript TOPCAN.R \\ # input file\
+> annuus_maf_0.03_Rvalue_NFFD \\ # input file\
+> argophyllus_maf_0.03_Rvalue_NFFD \\ # input file\
 > R \\ # R: correlation BF: BayesFactor P: Pvalue\
-> 5kbwindow_recombination \\\
+> 5kbwindow_recombination \\ # input file\
 > 0.99 \\ # cut of value for assocition test, 0.01 for top percentile or 10 of BayesFactor > 10\
 > 0.9999 \\ # quantile threshold of the binomial expectation \
 > ~ \\ # save directory \
 > 150 # number of threads
+>
+> output:
+>
+>> annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate
+>> **information on number of total snps and outlier snps for each window and whether the window is a top candidate**
+
+
+
 
 
