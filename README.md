@@ -49,14 +49,14 @@
 >
 > Runs as:
 > 
-> Rscript TOPCAN.R \\
-> annuus_maf_0.03_Rvalue_NFFD /\
-> argophyllus_maf_0.03_Rvalue_NFFD /\
-> R /\
-> 5kbwindow_recombination /\
-> 0.99 /\
-> 0.9999 /\
-> ~ /\
+> Rscript TOPCAN.R \\\
+> annuus_maf_0.03_Rvalue_NFFD \\\
+> argophyllus_maf_0.03_Rvalue_NFFD \
+> R \
+> 5kbwindow_recombination \
+> 0.99 \
+> 0.9999 \
+> ~ \
 > 150
 
 
