@@ -52,11 +52,11 @@
 > Rscript TOPCAN.R \\\
 > annuus_maf_0.03_Rvalue_NFFD \\\
 > argophyllus_maf_0.03_Rvalue_NFFD \\\
-> R \\#R: correlation BF: BayesFactor P: Pvalue\
+> R \\ # R: correlation BF: BayesFactor P: Pvalue\
 > 5kbwindow_recombination \\\
-> 0.99 \\\
-> 0.9999 \\\
-> ~ \\\
-> 150
+> 0.99 \\ # cut of value for assocition test, 0.01 for top percentile or 10 of BayesFactor > 10\
+> 0.9999 \\ # quantile threshold of the binomial expectation \
+> ~ \\ # save directory \
+> 150 # number of threads
 
 
