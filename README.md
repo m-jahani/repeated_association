@@ -49,7 +49,7 @@
 >
 > Runs as:
 > 
-> Rscript TOPCAN.R /\
+> Rscript TOPCAN.R \\
 > annuus_maf_0.03_Rvalue_NFFD /\
 > argophyllus_maf_0.03_Rvalue_NFFD /\
 > R /\
