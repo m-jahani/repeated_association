@@ -39,7 +39,7 @@
 
 ## Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf
 
-> **standard VCF"
+> **standard VCF**
 
 # Scripts:
 
@@ -65,6 +65,22 @@
 >> **information on number of total snps and outlier snps for each window and whether the window is a top candidate**
 
 
+## NULLW.R
+
+> **identifies windows of Repeated Association (WRAs) between pairs of species**
+**
+>
+> Runs as:
+>
+> Rscript NULLW.R \
+> annuus_maf_0.03_Rvalue_NFFD \\ # input file\
+> argophyllus_maf_0.03_Rvalue_NFFD \\ # input file\
+> R \\ # R: correlation BF: BayesFactor P: Pvalue\
+> 5kbwindow_recombination \\ # input file\
+> annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate \\ #TOPCAN.R output
+> 0.05 \
+> ~  \\ # save directory \
+> 150 # number of threads
 
 
 
