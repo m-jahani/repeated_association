@@ -1,4 +1,7 @@
-# Input files:
+# Repeatability of adaptation in sunflowers
+
+
+## Input files:
 
 ### annuus_maf_0.03_Rvalue_NFFD
 ```
@@ -49,7 +52,7 @@ Genetic Map
 ```
 Standard VCF
 ```
-# Scripts:
+## Scripts:
 
 ### TOPCAN.R
 
