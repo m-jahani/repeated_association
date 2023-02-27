@@ -52,11 +52,11 @@ Standard VCF
 # Scripts:
 
 ### TOPCAN.R
-```
+
 Identifies windows of the genome within each species that showed strong signatures of association
 
- Runs as:
- 
+### Runs as:
+ ```
  Rscript TOPCAN.R \
  annuus_maf_0.03_Rvalue_NFFD \ # input file
  argophyllus_maf_0.03_Rvalue_NFFD \ # input file
