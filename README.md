@@ -7,7 +7,7 @@ Spearsman correlation R Coefficients for Annuus SNPs and NFFD climate variable
  - column2: variable ID.
  - column3: SNP ID in format of chromosomeID:Position.
  - column4: Corresponding window.
- - column5: Crrelation Coefficient value.
+ - column5: Correlation Coefficient value.
 ```
 
 ### argophyllus_maf_0.03_Rvalue_NFFD
@@ -17,7 +17,7 @@ Spearsman correlation R Coefficients for Argophyllus SNPs and NFFD climate varia
  - column2: variable ID
  - column3: SNP ID in format of chromosomeID:Position
  - column4: Corresponding window
- - column5: Crrelation Coefficient value
+ - column5: Correlation Coefficient value
  ```
 
 ### 5kbwindow_recombination
