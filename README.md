@@ -61,9 +61,10 @@ Identifies windows of the genome within each species that showed strong signatur
  0.9999 \\ # quantile threshold of the binomial expectation \
  ~ \\ # save directory \
  150 # number of threads
+```
 
- output:
-
+### Output:
+```
  annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate
  annuus_maf_0.03_Rvalue_NFFD_topcandidate
  argophyllus_maf_0.03_Rvalue_NFFD_topcandidate
@@ -85,9 +86,10 @@ annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate \\ #TO
 0.05 \\ # threshold of q-value in FDR test \ 
 ~  \\ # save directory \
 150 # number of threads
+```
 
-output:
-
+### Output:
+```
 Annuus_Argophyllus_NFFD_nullw_result_FDR_0.05
 Argophyllus_Annuus_NFFD_nullw_result_FDR_0.05
 Argophyllus_Annuus_NFFD_nullw_result
@@ -111,8 +113,9 @@ Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \\ # input file\
 5 \\ # genetic distance threshold \
 ~  \\ # save directory \
 25 # number of threads
+```
 
-output:
-
+### Output:
+```
 Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result
 ```
