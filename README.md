@@ -77,11 +77,10 @@ Identifies windows of the genome within each species that showed strong signatur
 
 
 ### NULLW.R
-```
 Identifies windows of Repeated Association (WRAs) between pairs of species
 
-Runs as:
-
+#### Runs as:
+```
 Rscript NULLW.R \\\
 annuus_maf_0.03_Rvalue_NFFD \\ # input file\
 argophyllus_maf_0.03_Rvalue_NFFD \\ # input file\
@@ -102,13 +101,11 @@ Annuus_Argophyllus_NFFD_nullw_result
 ```
 
 ### LDCLUSTER.R
-```
 Forms Clusters of Repeated Association (CRAs) base on LD and genetic distance between them
 
-This script needs plink installed to run
- 
-Runs as:
-
+#### Runs as:
+needs plink installed to run
+```
 Rscript LDCLUSTER.R \
 Annuus_Argophyllus_NFFD_nullw_result_FDR_0.05 \\ #NULLW.R output \
 annuus_maf_0.03_Rvalue_NFFD \ # input file
