@@ -2,21 +2,21 @@
 
 ### annuus_maf_0.03_Rvalue_NFFD
 
-> **Spearsman correlation R coeficients for Annuus SNPs and NFFD climate variable** 
+> **Spearsman correlation R Coefficients for Annuus SNPs and NFFD climate variable** 
 > - column1: species ID 
 > - column2: variable ID.
 > - column3: SNP ID in format of chromosomeID:Position.
 > - column4: Corresponding window.
-> - column5: Crrelation coeficient value.
+> - column5: Crrelation Coefficient value.
 
 ### argophyllus_maf_0.03_Rvalue_NFFD
 
-> **Spearsman correlation R coeficients for Argophyllus SNPs and NFFD climate variable**
+> **Spearsman correlation R Coefficients for Argophyllus SNPs and NFFD climate variable**
 > - column1: species ID
 > - column2: variable ID
 > - column3: SNP ID in format of chromosomeID:Position
 > - column4: Corresponding window
-> - column5: Crrelation coeficient value
+> - column5: Crrelation Coefficient value
 
 ### 5kbwindow_recombination
 
