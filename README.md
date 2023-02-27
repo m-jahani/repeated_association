@@ -3,6 +3,7 @@
 ### annuus_maf_0.03_Rvalue_NFFD
 ```
 Spearsman correlation R Coefficients for Annuus SNPs and NFFD climate variable
+
  - column1: species ID 
  - column2: variable ID.
  - column3: SNP ID in format of chromosomeID:Position.
@@ -13,6 +14,7 @@ Spearsman correlation R Coefficients for Annuus SNPs and NFFD climate variable
 ### argophyllus_maf_0.03_Rvalue_NFFD
 ```
 Spearsman correlation R Coefficients for Argophyllus SNPs and NFFD climate variable
+
  - column1: species ID
  - column2: variable ID
  - column3: SNP ID in format of chromosomeID:Position
@@ -23,12 +25,14 @@ Spearsman correlation R Coefficients for Argophyllus SNPs and NFFD climate varia
 ### 5kbwindow_recombination
 ```
 Recombination rate file
+
   - column1: window ID
   - column2: recombination rate
 ```
 ### Annuus_threshold.90
 ```
 significant LD threshld for different window distance, base on null distribution cinstructed on 10000 random window withthe corresponding distance
+
  - column1: window distance (bp)
  - column2: LD threshold
 ```
@@ -36,6 +40,7 @@ significant LD threshld for different window distance, base on null distribution
 ### Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt
 ```
 Genetic Map
+
 - column1: Chromosome
 - column2: Physical Position (bp)
 - column3: Genetic Position (cM)
