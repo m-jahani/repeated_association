@@ -109,14 +109,14 @@ This script needs plink installed to run
  
 Runs as:
 
-Rscript LDCLUSTER.R \\\
+Rscript LDCLUSTER.R \
 Annuus_Argophyllus_NFFD_nullw_result_FDR_0.05 \\ #NULLW.R output \
-annuus_maf_0.03_Rvalue_NFFD \\ # input file\
-Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf \\ # input file\
-Annuus_threshold.90 \\ # input file\
-Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \\ # input file\
-5 \\ # genetic distance threshold \
-~  \\ # save directory \
+annuus_maf_0.03_Rvalue_NFFD \ # input file
+Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf \ # input file
+Annuus_threshold.90 \ # input file
+Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \ # input file
+5 \ # genetic distance threshold 
+~  \ # save directory 
 25 # number of threads
 ```
 
