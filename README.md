@@ -120,9 +120,28 @@ Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \ # input file
 5 \ # genetic distance threshold 
 ~  \ # save directory 
 25 # number of threads
+
+
+Rscript LDCLUSTER.R \
+Argophyllus_Annuus_NFFD_nullw_result_FDR_0.05 \\ #NULLW.R output \
+argophyllus_maf_0.03_Rvalue_NFFD \ # input file
+Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf \ # input file
+Annuus_threshold.90 \ # input file
+Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \ # input file
+5 \ # genetic distance threshold 
+~  \ # save directory 
+25 # number of threads
 ```
 
 ### Output:
 ```
 Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result
+
+Argophyllus_Annuus_NFFD_FDR_0.05.clustering_result
+```
+
+### merge LDCLUSTER.R results
+
+```
+cat Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result Argophyllus_Annuus_NFFD_FDR_0.05.clustering_result > Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged
 ```
