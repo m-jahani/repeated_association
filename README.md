@@ -143,6 +143,6 @@ Argophyllus_Annuus_NFFD_FDR_0.05.clustering_result
 ### Merge LDCLUSTER.R results
 
 ```
-cat Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result Argophyllus_Annuus_NFFD_FDR_0.05.clustering_result grep -v "chromosome" > Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged
+cat Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result Argophyllus_Annuus_NFFD_FDR_0.05.clustering_result > Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged
 ```
 
