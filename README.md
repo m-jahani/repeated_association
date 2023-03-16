@@ -117,7 +117,7 @@ annuus_maf_0.03_Rvalue_NFFD \ # input file
 Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf \ # input file
 Annuus_threshold.90 \ # input file
 Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \ # input file
-5 \ # genetic distance threshold 
+1 \ # genetic distance threshold 
 ~  \ # save directory 
 25 # number of threads
 
@@ -128,7 +128,7 @@ argophyllus_maf_0.03_Rvalue_NFFD \ # input file
 Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf \ # input file
 Annuus_threshold.90 \ # input file
 Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \ # input file
-5 \ # genetic distance threshold 
+1 \ # genetic distance threshold 
 ~  \ # save directory 
 25 # number of threads
 ```
