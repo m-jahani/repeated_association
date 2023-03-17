@@ -64,7 +64,15 @@ The position of haploblocks in the sunflower genome
 - column3: End Position 
 - column4: Species
 - column5: Haploblock ID
+```
 
+### Ha412.genome
+
+```
+length of each chromosome in Ha412.V2 reference genome
+
+- column1: Chromosome
+- column2: length (bp)
 ```
 
 ## Scripts:
