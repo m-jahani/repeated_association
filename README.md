@@ -54,6 +54,19 @@ Genetic Map
 ```
 Standard VCF
 ```
+
+### HAPLOBLOCKS
+```
+The position of haploblocks in the sunflower genome
+
+- column1: Chromosome
+- column2: Start Position 
+- column3: End Position 
+- column4: Species
+- column5: Haploblock ID
+
+```
+
 ## Scripts:
 
 ### TOPCAN.R
