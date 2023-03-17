@@ -141,8 +141,7 @@ Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \ # input file
 1 \ # genetic distance threshold 
 ~  \ # save directory 
 25 # number of threads
-
-
+```
 Rscript LDCLUSTER.R \
 Argophyllus_Annuus_NFFD_nullw_result_FDR_0.05 \ #NULLW.R output \
 argophyllus_maf_0.03_Rvalue_NFFD \ # input file
