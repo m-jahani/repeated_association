@@ -79,7 +79,7 @@ length of each chromosome in Ha412.V2 reference genome
 
 ### TOPCAN.R
 
-Identifies windows of the genome within each species that showed strong signatures of association
+Detects genomic windows within each species that exhibit strong association signals.
 
 ### Runs as:
  ```
@@ -103,7 +103,7 @@ Identifies windows of the genome within each species that showed strong signatur
 
 
 ### NULLW.R
-Identifies windows of Repeated Association (WRAs) between pairs of species
+Detects windows of Repeated Association (WRAs) between pairs of species.
 
 #### Runs as:
 ```
@@ -168,12 +168,12 @@ cat Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result Argophyllus_Annuus_NFFD_F
 ```
 
 ### OVERLAP.R
-finds overlapping haploblocks with clusters of repeated association
+Identifies haploblocks that overlap with clusters of repeated association.
 
 #### Runs as:
 ```
 Rscript OVERLAP.R \
-/DATA/home/mjahani/CONVERG/NEW/HAPLOBLOCKS \  # input file
+HAPLOBLOCKS \  # input file
 Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged \  # merged repeated association clusters
 Annuus_Argophyllus \  # IDs of two species being compared (seprated by underscore)
 ~ \  # save directory
@@ -186,3 +186,20 @@ Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged_overalp_haploblocks
 ```
 
 ### OVERLAP.R
+Evaluates whether the length of overlap and the number of overlapped repeated clusters with haploblocks significantly deviate from the null expectation.
+
+### Runs as:
+```
+Rscript OVERLAP_PVALUE.R \
+HAPLOBLOCKS \  # input file
+Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged_overalp_haploblocks \ #CRA and haploblock ovrlap result from OVERLAP.R script
+Annuus_Argophyllus \ # IDs of two species being compared (seprated by underscore)
+Ha412.genome \ # input file
+repeated_association \
+100 # number of threads
+```
+
+### Output:
+```
+Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged_overalp_haploblocks_Pvalue
+```
