@@ -133,7 +133,7 @@ Forms Clusters of Repeated Association (CRAs) base on LD and genetic distance be
 needs plink installed to run
 ```
 Rscript LDCLUSTER.R \
-Annuus_Argophyllus_NFFD_nullw_result_FDR_0.05 \\ #NULLW.R output \
+Annuus_Argophyllus_NFFD_nullw_result_FDR_0.05 \ #NULLW.R output \
 annuus_maf_0.03_Rvalue_NFFD \ # input file
 Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf \ # input file
 Annuus_threshold.90 \ # input file
@@ -144,7 +144,7 @@ Ha412HOv2.0-20181130.Nov22k22.geneticmap.extradivisions.txt \ # input file
 
 
 Rscript LDCLUSTER.R \
-Argophyllus_Annuus_NFFD_nullw_result_FDR_0.05 \\ #NULLW.R output \
+Argophyllus_Annuus_NFFD_nullw_result_FDR_0.05 \ #NULLW.R output \
 argophyllus_maf_0.03_Rvalue_NFFD \ # input file
 Annuus.tranche90.snp.env.90.bi.remappedHa412HO.beagle.vcf \ # input file
 Annuus_threshold.90 \ # input file
@@ -167,3 +167,22 @@ Argophyllus_Annuus_NFFD_FDR_0.05.clustering_result
 cat Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result Argophyllus_Annuus_NFFD_FDR_0.05.clustering_result > Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged
 ```
 
+### OVERLAP.R
+finds overlapping haploblocks with clusters of repeated association
+
+#### Runs as:
+```
+Rscript OVERLAP.R \
+/DATA/home/mjahani/CONVERG/NEW/HAPLOBLOCKS \  # input file
+Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged \  # merged repeated association clusters
+Annuus_Argophyllus \  # IDs of two species being compared (seprated by underscore)
+~ \  # save directory
+100 # number of threads
+```
+
+### Output:
+```
+Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged_overalp_haploblocks
+```
+
+### OVERLAP.R
