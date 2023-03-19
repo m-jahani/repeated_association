@@ -195,7 +195,7 @@ HAPLOBLOCKS \  # input file
 Annuus_Argophyllus_NFFD_FDR_0.05.clustering_result_merged_overalp_haploblocks \ #CRA and haploblock ovrlap result from OVERLAP.R script
 Annuus_Argophyllus \ # IDs of two species being compared (seprated by underscore)
 Ha412.genome \ # input file
-repeated_association \
+~ \ # save directory
 100 # number of threads
 ```
 
