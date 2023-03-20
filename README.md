@@ -107,14 +107,14 @@ Detects windows of Repeated Association (WRAs) between pairs of species.
 
 #### Runs as:
 ```
-Rscript NULLW.R \\\
-annuus_maf_0.03_Rvalue_NFFD \\ # input file\
-argophyllus_maf_0.03_Rvalue_NFFD \\ # input file\
-R \\ # R: correlation BF: BayesFactor P: Pvalue\
-5kbwindow_recombination \\ # input file\
-annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate \\ #TOPCAN.R output \
-0.05 \\ # threshold of q-value in FDR test \ 
-~  \\ # save directory \
+Rscript NULLW.R \
+annuus_maf_0.03_Rvalue_NFFD \ # input file\
+argophyllus_maf_0.03_Rvalue_NFFD \ # input file\
+R \ # R: correlation BF: BayesFactor P: Pvalue\
+5kbwindow_recombination \ # input file\
+annuus_maf_0.03_Rvalue_NFFD_argophyllus_maf_0.03_Rvalue_NFFD_topcandidate \ #TOPCAN.R output \
+0.05 \ # threshold of q-value in FDR test \ 
+~  \ # save directory \
 150 # number of threads
 ```
 
